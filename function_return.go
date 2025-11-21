@@ -1,5 +1,6 @@
 package main
 
+/*
 import "fmt"
 
 // In go we cant have unused variable thats why we use _ to ignore unneeded information
@@ -14,3 +15,4 @@ func main() {
 	fristName, _ := getNames()
 	fmt.Println("Welcome to Textio,", fristName)
 }
+*/
