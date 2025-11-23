@@ -2,15 +2,21 @@ package main
 
 import "fmt"
 
-// In go we cant have unused variable thats why we use _ to ignore unneeded information
-// _ explicitly ignore
+type Wheel struct{
+	Material string
+	Radius string
+}
 
-func getNames() (string, string) {
-	return "Dave", "Mark"
+type car struct{
+	Make string
+	Model int
+	Weght float32
+	Wheel Wheel
 }
 
 func main() {
 
-	fristName, _ := getNames()
-	fmt.Println("Welcome to Textio,", fristName)
+	myCar := car{}
+	myCar.Wheel.Radius = "5"
+	fmt.Println("Welcome to Textio,", myCar)
 }
